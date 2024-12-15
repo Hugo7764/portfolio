@@ -1,48 +1,46 @@
 <div class="bg-blue-50">
-             
-    <section class="bg-blue-500 text-white py-32">
-      <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
-        <div class="md:w-1/2 space-y-6">
-          <h2 class="text-4xl font-bold">Lorem ipsum</h2>
-          <p class="text-lg">
-                Lorem ipsum
-          </p>
-        </div>
-        <!-- add une image ou un truc pour faire moins vide -->
-      </div>
-    </section>
-  
-    <section class="py-20 bg-white">
-      <div class="container mx-auto px-4">
-        <h3 class="text-3xl font-bold text-center text-gray-800">Lorem ipsum</h3>
-        <p class="text-center text-gray-600 mt-2">Lorem ipsum</p>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
-          <div class="bg-blue-50 p-6 rounded-lg shadow hover:shadow-lg">
-            <h4 class="text-lg font-bold text-blue-600">Lorem ipsum</h4>
-            <p class="text-gray-600 mt-2">Lorem ipsum</p>
-          </div>
-          <div class="bg-blue-50 p-6 rounded-lg shadow hover:shadow-lg">
-            <h4 class="text-lg font-bold text-blue-600">Lorem ipsum</h4>
-            <p class="text-gray-600 mt-2">Lorem ipsum</p>
-          </div>
-          <div class="bg-blue-50 p-6 rounded-lg shadow hover:shadow-lg">
-            <h4 class="text-lg font-bold text-blue-600">Lorem ipsum</h4>
-            <p class="text-gray-600 mt-2">Lorem ipsum</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-  
-  <!-- duplication de la section pour que l'on puisse voir la navbar fixed -->
-  <section class="bg-blue-500 text-white py-32">
-    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
-      <div class="md:w-1/2 space-y-6 md:text-right md:ml-auto">
-        <h2 class="text-4xl font-bold">Lorem ipsum</h2>
-        <p class="text-lg">
-              Lorem ipsum
+  <!-- Section principale -->
+  <section class="bg-blue-500 text-white py-32 relative overflow-hidden">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-12 animate-fade-in">
+      <!-- Texte principal -->
+      <div class="md:w-auto text-center md:text-left space-y-6 animate-slide-in-left">
+        <h1 class="text-5xl font-bold">Hugo Martinez</h1>
+        <p class="text-xl text-gray-200">
+          Ingénieur Cloud Computing | AWS | Kubernetes | DevOps
         </p>
       </div>
-      <!-- add une image ou un truc pour faire moins vide -->
+      <!-- Image avec cadre circulaire -->
+      <div class="md:w-auto flex justify-center md:justify-end">
+        <div class="relative rounded-full overflow-hidden shadow-2xl w-64 h-64 animate-zoom-in">
+          <img src="/imgs/henry.jpeg" alt="Photo" class="w-full h-full object-cover">
+          <!-- Animation décorative -->
+          <div class="absolute inset-0 border-4 border-blue-300 rounded-full animate-pulse"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Cercles décoratifs animés -->
+    <div class="absolute -top-16 -left-16 w-40 h-40 bg-blue-400 opacity-30 rounded-full animate-bounce"></div>
+    <div class="absolute -bottom-16 -right-16 w-56 h-56 bg-blue-600 opacity-20 rounded-full animate-bounce delay-200"></div>
+  </section>
+
+  <!-- Section compétences visuelles -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <h3 class="text-4xl font-bold text-center text-gray-800 mb-10">Domaines de travail</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-blue-50 p-6 rounded-lg shadow hover:shadow-lg transition transform hover:scale-105">
+          <h4 class="text-xl font-bold text-blue-600 mb-2">Cloud Computing</h4>
+          <p class="text-gray-600">Maîtrise des solutions AWS, Azure, et GCP pour des architectures scalables.</p>
+        </div>
+        <div class="bg-blue-50 p-6 rounded-lg shadow hover:shadow-lg transition transform hover:scale-105">
+          <h4 class="text-xl font-bold text-blue-600 mb-2">Orchestration</h4>
+          <p class="text-gray-600">Déploiement automatisé avec Kubernetes, Docker, et Helm.</p>
+        </div>
+        <div class="bg-blue-50 p-6 rounded-lg shadow hover:shadow-lg transition transform hover:scale-105">
+          <h4 class="text-xl font-bold text-blue-600 mb-2">DevOps & CI/CD</h4>
+          <p class="text-gray-600">Automatisation via Terraform, Ansible, et pipelines GitHub Actions.</p>
+        </div>
+      </div>
     </div>
   </section>
+</div>
